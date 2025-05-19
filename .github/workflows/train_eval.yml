@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: trained-model
-          path: myModel.h5"
+          path: myModel.h5
 
   evaluate_model:
     needs: train_model
