@@ -68,6 +68,10 @@ jobs:
           name: trained-model
           path: .
 
+      - name: Create dataset
+        run: |
+          python create_dataset.py
+
       - name: Evaluate model
         run: |
           python 05lab_test.py
